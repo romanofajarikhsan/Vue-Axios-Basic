@@ -12,7 +12,7 @@ Vue.createApp({
             title: "fareedsurya",
           },
           fb: {
-            url: "https://facebook.com/fareedsurya",
+            url: "https://web.facebook.com/fareed.frenologica/",
             title: "Farid Suryanto",
           },
           yt: {
