@@ -32,4 +32,13 @@ Vue.createApp({
       ]
     };
   },
+  mounted:()=>{    
+    axios.get("./contents/header.json")
+    .then((res)=>{
+      console.log(res.data());
+    })
+    .catch((error)=>{
+      console.log(error);
+    })
+  }
 }).mount("#app");
