@@ -15,7 +15,7 @@ Vue.createApp({
           .get(
             "https://raw.githubusercontent.com/faridsurya/Vue-Axios-Basic/master/contents/"+article
           )
-          .then((res) => {           
+          .then((res) => {
             var html = converter.makeHtml(res.data);           
             this.article = html;
           })

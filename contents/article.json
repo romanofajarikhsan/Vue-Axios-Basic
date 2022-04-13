@@ -1,0 +1,10 @@
+[
+	{
+		"title":"Judul Artikel",
+        "description": "Descripsi singkat artikel",
+        "thumbnail": "url gambar thumbnail",
+        "author": "Nama Penulis",
+        "published_at": "Tanggal terbit",
+        "content": "article_1.md"
+	}
+]
