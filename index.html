@@ -32,9 +32,9 @@
             <h1>{{header.title}}</h1>
             <p>{{header.description}}</p>
             <div class="social">
-              <a v-bind:href="header.social.ig.url"><i class="bi-instagram"></i> {{header.social.ig.title}}</a>
-              <a v-bind:href="header.social.fb.url"><i class="bi-github"></i> {{header.social.fb.title}}</a>
-              <a v-bind:href="header.social.yt.url"><i class="bi-youtube"></i> {{header.social.yt.title}}</a>
+              <a v-bind:href="header.social == undefined ? '':header.social.ig.url"><i class="bi-instagram"></i> {{header.social == undefined ? '':header.social.ig.title}}</a>
+              <a v-bind:href="header.social == undefined ? '':header.social.fb.url"><i class="bi-github"></i> {{header.social == undefined ? '':header.social.fb.title}}</a>
+              <a v-bind:href="header.social == undefined ? '':header.social.yt.url"><i class="bi-youtube"></i> {{header.social == undefined ? '':header.social.yt.title}}</a>
             </div>
           </div>
           <div class="col-6 align-self-end text-center">
@@ -57,13 +57,11 @@
               <a :href="'https://faridsurya.github.io/Vue-Axios-Basic/read.html?article='+item.content" class="btn btn-primary" role="button">Read</a>
             </div>
           </div>
-        </div>   
+        </div>
 
       </div>
 
     </div>
-   
-
     </div>
 
 
@@ -89,7 +87,9 @@
     ></script>
 
     <script src="https://unpkg.com/vue@3"></script>
-    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+    <script src="./main_final.js"></script>
     
   </body>
 </html>
