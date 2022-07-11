@@ -1,3 +1,5 @@
+let apiUrl = "https://myapi.ruang-ekspresi.id/index.php/";
+
 Vue.createApp({
     data() {
       return {
@@ -10,9 +12,7 @@ Vue.createApp({
         getHeaderData()
         {
           axios
-            .get(
-              "https://raw.githubusercontent.com/faridsurya/Vue-Axios-Basic/master/contents/header.json"
-            )
+            .get(apiUrl+"users/1")
             .then((res) => {              
               this.header = res.data;
               this.getArticles();
